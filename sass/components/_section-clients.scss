@@ -1,0 +1,29 @@
+/* СЕКЦИЯ ПОСТОЯННЫХ КЛИЕНТОВ */
+
+.clients {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__link {
+    display: block;
+    border: 1px solid $color-icons;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+    fill: $color-icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $interactive-color;
+        border-color: $interactive-color;
+    }
+}

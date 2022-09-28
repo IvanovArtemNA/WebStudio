@@ -1,0 +1,46 @@
+/* ГЛАВНАЯ СЕКЦИЯ */
+
+.hero__title {
+    color: $background-text-color;
+    letter-spacing: 0.06em;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #c4c4c4;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.hero__button {
+    color: $background-text-color;
+    background-color: $interactive-color;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 130px;
+    border: 0 solid transparent;
+    margin-top: 30px;
+
+    transition-property: box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

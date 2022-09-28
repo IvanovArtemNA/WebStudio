@@ -1,0 +1,18 @@
+/* ЛОГОТИП ХЕДЕР */
+
+.logo__part {
+    color: $interactive-color;
+}
+
+.logo {
+    color: $logo-color-header;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    &--white {
+        color: $background-text-color;
+    }
+}

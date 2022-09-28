@@ -1,0 +1,58 @@
+/*  ОСНОВНОЕ */
+
+body {
+    background-color: $background-text-color;
+    color: $primary-text-color;
+    font-family: $font-family-main;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $background-text-color;
+
+    &:nth-child(2) {
+        padding-bottom: 0px;
+    }
+
+    &:nth-child(4) {
+        background-color: $background-section-color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
