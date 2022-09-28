@@ -2,23 +2,31 @@
 
 .teammates {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.18;
+    font-weight: 700;
 }
 
 .teammates__item {
-    margin-right: 30px;
+    margin-top: 30px;
     background-color: $background-text-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
     text-align: center;
+}
 
-    &:last-child {
-        margin-right: 0;
-    }
+.teammates__icon {
+    width: 450px;
+    height: 460px;
 }
 
 .teammates__name {
-    color: $primary-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -32,15 +40,15 @@
 }
 
 .teammates__container {
+    padding-bottom: 24px;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .social-networks {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .social-networks__item {
@@ -54,11 +62,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2196f3;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    /*background-color: #2196f3;*/
+    
 
-    transition-property: fill, border-radius, background-color;
+    /*transition-property: fill, border-radius, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -67,9 +74,11 @@
         fill: $background-text-color;
         background-color: $interactive-color;
         border-radius: 50%;
-    }
+    }*/
 
     &--white {
         fill: $background-text-color;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
     }
 }

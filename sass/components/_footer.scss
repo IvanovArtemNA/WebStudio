@@ -1,16 +1,12 @@
 /* ФУТЕР */
 
 .footer {
-    color: $background-text-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     background-color: $footer-backgroud-color;
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+    text-align: center;
 }
 
 .address {
@@ -18,38 +14,34 @@
     margin-top: 20px;
 }
 
-.address__list {
-    display: block;
-    flex-wrap: wrap;
-    padding: initial;
-}
+/*.address__list {
+    
+}*/
 
-.address__item {
-    margin-bottom: 9px;
-    list-style: none;
-
+/*.address__item {
     &:last-child {
         margin-bottom: 0;
     }
-}
+}*/
 
 .makeit {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.03em;
     color: $background-text-color;
 }
 
 .address__link {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.71;
     text-decoration: none;
     color: $background-text-color;
+    /*transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:hover,
     &:focus {
         color: $interactive-color;
-    }
+    }*/
 }
