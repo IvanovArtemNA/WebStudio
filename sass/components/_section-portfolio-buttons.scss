@@ -40,22 +40,20 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    /*cursor: pointer;*/
+    cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
 
-    /*transition-property: box-shadow, color, background-color;
+    transition-property: box-shadow, color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         background-color: $interactive-color;
         color: $background-text-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
-    }*/
-
+    }
 }

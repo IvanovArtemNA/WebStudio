@@ -31,10 +31,16 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $background-text-color;
+    
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
 
-    &:nth-child(3) {
-        background-color: $background-section-color;
-    }
+            &:nth-child(2) {
+                padding-bottom: 0px;
+            }
+        }
+
 }
 
 h1,

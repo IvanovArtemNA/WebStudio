@@ -13,6 +13,11 @@
             flex-wrap: wrap;
             justify-content: center; 
         }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
+ 
 }
 
 .address {
@@ -41,7 +46,8 @@
     line-height: 1.71;
     text-decoration: none;
     color: $background-text-color;
-    /*transition-property: color;
+    
+    /*transition-property: color;*/
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -49,7 +55,7 @@
     &:hover,
     &:focus {
         color: $interactive-color;
-    }*/
+    }
 }
 
 .one {
@@ -57,4 +63,8 @@
             margin-top: 0;
             margin-left: 165px;
         }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 70px;
+    }
 }

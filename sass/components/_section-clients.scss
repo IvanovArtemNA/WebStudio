@@ -2,18 +2,33 @@
 
 .clients {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;     
+    gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
 }
 
 .clients__icon {
     margin-top: 30px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
+    
+        &:nth-child(n+3) {
+            margin-top: 0;
+        }
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+         
         &:nth-child(n+4) {
             margin-top: 0;
         }
+    }
+
+    @media screen and (min-width: 1200px) {
+            margin-top: 50px;
     }
 }
 
@@ -29,17 +44,22 @@
     align-items: center;
     justify-content: center;
 
-    /*transition-property: fill, border-color;
+    transition-property: fill, border-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $interactive-color;
+        border-color: $interactive-color;
+    }
 
     @media screen and (min-width: 768px) {
         width: 226px; 
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px
+    }
     
-   /* &:hover,
-    &:focus {
-        fill: $interactive-color;
-        border-color: $interactive-color;
-    }*/
 } 

@@ -1,6 +1,10 @@
 /* СЕКЦИЯ КОМАНДА */
 
 .teammates {
+    background-color: $background-section-color;
+}
+
+.teammates__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,27 +22,35 @@
 }
 
 .teammates__item {
-    margin-top: 30px;
     background-color: $background-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     text-align: center;
+    margin-top: 30px;
 
-    @media screen and (min-width: 768px) {
-        
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 1 * 30px) / 2);
         &:nth-child(n+3) {
         margin-top: 0;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+        width: calc((100% - 3 * 30px) / 4);
+    }
 }
 
 .teammates__icon {
-    width: 450px;
+    width: auto;
     height: 460px;
 
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 374px;
+    @media screen and (min-width: 768px) {  
+    height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    height: 260px;
     }
 }
 
@@ -74,14 +86,14 @@
 .social-networks__link {
     fill: $color-icons;
     height: 44px;
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     justify-content: center;
     align-items: center;
     /*background-color: #2196f3;*/
     
-
-    /*transition-property: fill, border-radius, background-color;
+    border-radius: 50%;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -89,12 +101,10 @@
     &:focus {
         fill: $background-text-color;
         background-color: $interactive-color;
-        border-radius: 50%;
-    }*/
+    }
 
     &--white {
         fill: $background-text-color;
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
     }
 }
