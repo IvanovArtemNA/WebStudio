@@ -4,12 +4,26 @@
     flex-wrap: wrap;
     display: flex;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .portfolio-filter__item {
 
     &:nth-child(3) {
         margin-right: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        margin-right: 0;
+        
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+        
     }
 
     /*&:last-child {

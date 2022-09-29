@@ -4,16 +4,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 30px;     
+}
+
+.clients__icon {
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+        &:nth-child(n+4) {
+            margin-top: 0;
+        }
+    }
 }
 
 .clients__link {
-    margin-top: 30px;
-    
-    display: block;
+    /*display: block;*/
     border: 1px solid $color-icons;
     border-radius: 4px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     width: 210px;
     height: 92px;
     fill: $color-icons;
@@ -21,13 +29,17 @@
     align-items: center;
     justify-content: center;
 
-    transition-property: fill, border-color;
+    /*transition-property: fill, border-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
 
-    &:hover,
+    @media screen and (min-width: 768px) {
+        width: 226px; 
+    }
+    
+   /* &:hover,
     &:focus {
         fill: $interactive-color;
         border-color: $interactive-color;
-    }
-}
+    }*/
+} 

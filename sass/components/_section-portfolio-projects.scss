@@ -12,6 +12,12 @@
 .project__ovelay-icon {
     width: 450px;
     height: 294px;
+
+    @media screen and (min-width: 768px) {
+        &:first-child {
+            width: 354px;
+        }
+    }
 }
 
 .portfolio-project__item {
@@ -21,7 +27,15 @@
     &:first-child {
         margin-top: 40px;
     }
-    
+
+    @media screen and (min-width: 768px) {
+        &:nth-child(even) {
+        margin-left: 28px;
+    }
+        &:nth-child(-n+2) {
+        margin-top: 14px
+    }
+}
     /*background-color: $background-text-color;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -36,9 +50,8 @@
 }
 
 .project {
-    
     text-decoration: none;
-
+    
     /*display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -56,6 +69,12 @@
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
+
+    @media screen and (min-width: 768px) {
+        &:first-child {
+            padding-bottom: 56px;
+        }
+    }
 }
 
 .project__title {
@@ -64,6 +83,10 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: 768px) {
+        max-width: 306px;
+    }
 }
 
 .project__category {
