@@ -11,15 +11,10 @@
     }
 }
 
-.portfolio-filter__item {
-
-    &:nth-child(3) { /* !!!!!!!*/ 
-        margin-right: 40px;
-    }
-
+/*.portfolio-filter__item {
     @media screen and (min-width: 768px) {
 
-        /*margin-right: 0;*/
+        margin-right: 0;
         
         &:nth-child(3) {
             margin-right: 0;
@@ -27,14 +22,14 @@
         
     }
 
-    /*&:last-child {
+    &:last-child {
         margin-right: 298px;
     }
 
     &:first-child {
         margin-left: 297px;
-    }*/
-}
+    }
+}*/
 
 .portfolio-filter__button {
     background-color: $background-section-color;
