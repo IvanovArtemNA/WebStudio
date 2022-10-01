@@ -271,6 +271,8 @@ img {
 }
 
 .navigation {
+  position: fixed;
+  z-index: 8;
   display: none;
   background-color: #ffffff;
 }
@@ -370,6 +372,7 @@ img {
 /* МОБИЛЬНОЕ МЕНЮ */
 .mobile__menu {
   position: absolute;
+  z-index: 9;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
@@ -1043,7 +1046,7 @@ img {
   /*width: auto;*/
   margin-top: 30px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (max-width: 767px) {
   .advantage-cards__item:first-child {
     margin-top: 0;
   }
