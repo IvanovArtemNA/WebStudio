@@ -11,15 +11,7 @@
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);*/
-
-    .container & {
-        background-color: red;
-    }
 }
-
-
-
-
 
 .backdrop {
     &.is-hidden {
@@ -131,24 +123,23 @@
     height: 40px;
     cursor: pointer;
     padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         border-color: $interactive-color;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus {
+        ~svg {
+            fill: $interactive-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
     }
 }
-
-.modal__form-input:focus {
-
-    &~svg {
-        fill: $interactive-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
 
 .modal__form-textarea {
 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
     }
@@ -171,7 +162,6 @@
     &:hover,
     &:focus {
         border-color: $interactive-color;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @media screen and (min-width: 1200px) {
@@ -198,11 +188,10 @@
     margin-bottom: 10px;
 }
 
-.modal__contract-link {
+.modal__checkbox-link {
     color: $interactive-color;
     font-size: 12px;
     line-height: 1.17;
-    /*text-decoration-line: underline;*/
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -211,11 +200,11 @@
     }
 
     @media screen and (max-width: 430px) {
-            margin-top: 5px;
+        margin-top: 5px;
     }
 }
 
-.dro {
+.modal__checkbox-text {
     font-size: 12px;
     line-height: 1.17;
 
@@ -260,6 +249,8 @@
 }
 
 .modal__input-icon {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     position: absolute;
     top: 45%;
     left: 12px;
@@ -267,7 +258,6 @@
 
     .modal__form-field:hover & {
         fill: $interactive-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -275,7 +265,6 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /*position: absolute;*/
 }
 
 .modal__checkbox-agreement {
@@ -287,89 +276,26 @@
     display: flex;
     background-color: #ffffff;
     cursor: pointer;
-
     & .modal__checkbox-agree {
             opacity: 1;
-            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     & .modal__checkbox-empty {
             opacity: 0;
-            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 
     .modal__checkbox-button.is-checked {
-    & .modal__checkbox-agree {
+        & .modal__checkbox-agree {
         opacity: 0;
-    }
+        }
 
-    & .modal__checkbox-empty {
+        & .modal__checkbox-empty {
         opacity: 1;
-    }
+        }
     }
             
 .modal__checkbox-agreement {
     min-width: 16px;
 }
-
-
-
-
-
-
-
-
-/*.modal__checkbox-input:checked {
-    &+.modal__checkbox-agreement {
-        opacity: 1;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        border: 0.2px solid $background-text-color;
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}*/
-
-/*.modal__checkbox-input {
-    &+.modal__icon-agreement {
-        opacity: 0;
-        transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}*/
-
-
-
-
-
-
-
-
-/*.modal__checkbox-input {
-    &+.modal__icon-agreement {
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-.modal__icon-border {
-    position: absolute;
-    margin-right: 340px;
-
-    @media screen and (min-width: 1200px) {
-        margin-right: 392px;
-    }
-}
-
-.modal__checkbox-input:checked {
-
-    &~.modal__icon-empty {
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-.modal__checkbox-input {
-
-    &~.modal__icon-border {
-        opacity: 1;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}*/
