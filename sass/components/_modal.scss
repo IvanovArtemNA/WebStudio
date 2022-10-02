@@ -9,6 +9,7 @@
     overflow-y: scroll; /*?? прокрутка модалки ??*/
 
     opacity: 1;
+    z-index: 2;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
@@ -23,8 +24,7 @@
 
 .modal {
     position: absolute;
-    top: 30em;
-    /*top: 50%;*/
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 40px 40px 40px 40px;
@@ -44,7 +44,6 @@
     }
 
     @media screen and (min-width: 768px) {
-        top: 37em;
         /*top: 505px;*/
     }
 
@@ -58,27 +57,32 @@
     background-color: #ffffff;
     border: none;
     position: absolute;
-    top: -35px;
-    right: -35px;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    
 
     &:hover,
     &:focus {
-        fill: $interactive-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: $interactive-color;;
+        
     }
 
     @media screen and (min-width: 1200px) {
-        top: -7%;    
+           
     }
 }
 
 .modal__close-icon {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-
-    cursor: pointer;
-    padding: 5px;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -271,7 +275,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 7px;
 }
 
-.modal__checkbox-button {
+/*.modal__checkbox-button {
     border: none;
     display: flex;
     background-color: #ffffff;
@@ -284,9 +288,24 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             opacity: 0;
             transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
+    }*/
 
-    .modal__checkbox-button.is-checked {
+        
+
+    .modal__checkbox.is-checked {
+     
+        & .modal__checkbox-agree {
+        opacity: 1;
+        }
+
+        & .modal__checkbox-empty {
+        opacity: 0;
+        }
+    
+}
+            
+    .modal__checkbox {
+
         & .modal__checkbox-agree {
         opacity: 0;
         }
@@ -294,8 +313,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         & .modal__checkbox-empty {
         opacity: 1;
         }
-    }
-            
+}
+
 .modal__checkbox-agreement {
     min-width: 16px;
 }

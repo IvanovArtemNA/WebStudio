@@ -7,8 +7,16 @@
 
 .footer__container {
     text-align: center;
+    
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center; 

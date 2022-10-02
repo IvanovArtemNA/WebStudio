@@ -21,6 +21,10 @@
     @media screen and (max-width: 1199px) {
         margin-top: 60px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .form-title {
@@ -32,7 +36,6 @@
 
 .form-subscribe__body {
 @media screen and (min-width: 1200px) {
-        margin-left: 93px;
         text-align: start;
     }
 }
