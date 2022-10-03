@@ -11,7 +11,7 @@
 /* МОБИЛЬНОЕ МЕНЮ */
 
 .mobile__menu {
-    z-index: 1;
+    z-index: 2;
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -58,7 +58,7 @@
 /* НАВИГАЦИЯ И КОНТАКТЫ */
 
 .navigation {
-    
+    z-index: 1;
     background-color: $background-text-color;
 
     &.is-open {
@@ -288,8 +288,8 @@
 .social-item__mobile-menu {
 
     @media screen and (min-width: 768px) {
-            display: none;
-        }
+        display: none;
+    }
 
     @media screen and(max-width: 395px) {
         flex-wrap: wrap;
