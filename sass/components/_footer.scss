@@ -1,63 +1,49 @@
 /* ФУТЕР */
 
 .footer {
-    padding: 60px 0;
-    background-color: $footer-backgroud-color;
+  padding: 60px 0;
+  background-color: $footer-backgroud-color;
 }
 
 .footer__container {
-    text-align: center;
-    
+  text-align: center;
 
-    @media screen and (min-width: 1200px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            text-align: left;
-        }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+  }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; 
-        }
- 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .address {
-    font-style: normal;
-    margin-top: 20px;
+  font-style: normal;
+  margin-top: 20px;
 }
 
-/*.address__list {
-    
-}*/
-
-/*.address__item {
-    &:last-child {
-        margin-bottom: 0;
-    }
-}*/
-
 .makeit {
-    font-weight: 700;
-    line-height: 1.14px;
-    letter-spacing: 0.03em;
-    color: $background-text-color;
+  font-weight: 700;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  color: $background-text-color;
 }
 
 .address__link {
-    line-height: 1.71;
-    text-decoration: none;
-    color: $background-text-color;
-    
-    /*transition-property: color;*/
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+  line-height: 1.71;
+  text-decoration: none;
+  color: $background-text-color;
 
-    &:hover,
-    &:focus {
-        color: $interactive-color;
-    }
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $interactive-color;
+  }
 }

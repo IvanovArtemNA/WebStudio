@@ -1,97 +1,96 @@
 /* СЕКЦИЯ КОМАНДА */
 
 .teammates {
-    background-color: $background-section-color;
+  background-color: $background-section-color;
 }
 
 .teammates__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    @media screen and (min-width: 768px) {
-            gap: 30px;
-        }
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
 }
 
 .section__title {
-    text-align: center;
-    font-size: 28px;
-    line-height: 1.18;
-    font-weight: 700;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 700;
 }
 
 .teammates__item {
-    background-color: $background-text-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-    text-align: center;
-    margin-top: 30px;
+  background-color: $background-text-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  margin-top: 30px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: calc((100% - 1 * 30px) / 2);
-        &:nth-child(n+3) {
-        margin-top: 0;
-        }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 1 * 30px) / 2);
+    &:nth-child(n + 3) {
+      margin-top: 0;
     }
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 50px;
-        width: calc((100% - 3 * 30px) / 4);
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+    width: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .teammates__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .teammates__profession {
-    color: $secondary-text-color;
-    font-size: 16px;
-    line-height: 1.19;
-    margin-top: 10px;
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 10px;
 }
 
 .teammates__container {
-    padding-bottom: 24px;
-    padding-top: 30px;
+  padding-bottom: 24px;
+  padding-top: 30px;
 }
 
 .social-networks {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .social-networks__item {
-    width: 44px;
+  width: 44px;
 }
 
 .social-networks__link {
-    fill: $color-icons;
-    height: 44px;
-    /*width: 100%;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*background-color: #2196f3;*/
-    
-    border-radius: 50%;
-    transition-property: fill, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $color-icons;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover,
-    &:focus {
-        fill: $background-text-color;
-        background-color: $interactive-color;
-    }
+  border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &--white {
-        fill: $background-text-color;
-        background: rgba(255, 255, 255, 0.1);
-    }
+  &:hover,
+  &:focus {
+    fill: $background-text-color;
+    background-color: $interactive-color;
+  }
+
+  &--white {
+    fill: $background-text-color;
+    background: rgba(255, 255, 255, 0.1);
+  }
 }

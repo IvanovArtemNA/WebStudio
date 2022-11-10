@@ -1,65 +1,60 @@
 /* СЕКЦИЯ ПОСТОЯННЫХ КЛИЕНТОВ */
 
 .clients {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 
-    @media screen and (max-width: 1199px) {
-            flex-wrap: wrap;
-        }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .clients__icon {
-    margin-top: 30px;
+  margin-top: 30px;
 
-    @media screen and (max-width: 767px) {
-    
-        &:nth-child(n+3) {
-            margin-top: 0;
-        }
-        }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-         
-        &:nth-child(n+4) {
-            margin-top: 0;
-        }
+  @media screen and (max-width: 767px) {
+    &:nth-child(n + 3) {
+      margin-top: 0;
     }
+  }
 
-    @media screen and (min-width: 1200px) {
-            margin-top: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(n + 4) {
+      margin-top: 0;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 
 .clients__link {
-    /*display: block;*/
-    border: 1px solid $color-icons;
-    border-radius: 4px;
-    /*cursor: pointer;*/
-    width: 210px;
-    height: 92px;
-    fill: $color-icons;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid $color-icons;
+  border-radius: 4px;
+  width: 210px;
+  height: 92px;
+  fill: $color-icons;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    transition-property: fill, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        fill: $interactive-color;
-        border-color: $interactive-color;
-    }
+  &:hover,
+  &:focus {
+    fill: $interactive-color;
+    border-color: $interactive-color;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 226px; 
-    }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 170px
-    }
-    
-} 
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
