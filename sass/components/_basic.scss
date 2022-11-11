@@ -1,46 +1,45 @@
 /*  ОСНОВНОЕ */
 
 body {
-    background-color: $background-text-color;
-    color: $primary-text-color;
-    font-family: $font-family-main;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  background-color: $background-text-color;
+  color: $primary-text-color;
+  font-family: $font-family-main;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $background-text-color;
-    
-    @media screen and (min-width: 1200px) {
-            padding-top: 94px;
-            padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-text-color;
 
-            &:nth-child(2) {
-                padding-bottom: 0px;
-            }
-        }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
+    &:nth-child(2) {
+      padding-bottom: 0px;
+    }
+  }
 }
 
 h1,
@@ -49,23 +48,23 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
