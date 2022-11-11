@@ -1,29 +1,28 @@
 /* ЛОГОТИП ХЕДЕР */
 
 .logo__part {
-    color: $interactive-color;
+  color: $interactive-color;
 }
 
 .logo {
-    color: $logo-color-header;
-    font-family: $font-family-secondary;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    text-decoration: none;
-    display: flex;
-    padding: 16px 0;
-    width: max-content;
+  color: $logo-color-header;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  display: flex;
+  padding: 16px 0;
+  width: max-content;
 
-    &--white {
-        
-        color: $background-text-color;
-        padding: 0;
+  &--white {
+    color: $background-text-color;
+    padding: 0;
 
-        @media screen and (max-width: 1199px) {
-            display: flex;
-            justify-content: center;
-            width: auto;      
-        }
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      width: auto;
     }
+  }
 }

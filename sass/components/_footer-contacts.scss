@@ -1,19 +1,18 @@
 /* КОНТАКТЫ ФУТЕР */
 
 .contacts-footer {
-    margin-top: 8px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    
-    text-decoration: none;
-    display: block;
+  margin-top: 8px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 
-    /*transition-property: color;*/
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  display: block;
 
-    &:hover,
-    &:focus {
-        color: $interactive-color;
-    }
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $interactive-color;
+  }
 }
