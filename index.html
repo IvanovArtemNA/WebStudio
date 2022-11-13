@@ -542,11 +542,11 @@
             <use href="./images/icons.svg#icon-close_modal_window"></use>
           </svg>
         </button>
-        <form class="modal__form">
+        <form class="modal__form js-modal__form">
           <strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
           <div class="modal__form-field">
             <label class="modal__form-text" for="name">Ім'я</label>
-            <input class="modal__form-input" type="text" name="name" id="name" />
+            <input class="modal__form-input" type="text" name="userName" id="name" required />
             <svg class="modal__input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person_form"></use>
             </svg>
@@ -554,7 +554,7 @@
 
           <div class="modal__form-field">
             <label class="modal__form-text" for="tel">Телефон</label>
-            <input class="modal__form-input" type="tel" name="tel" id="tel" />
+            <input class="modal__form-input" type="tel" name="userTel" id="tel" required />
             <svg class="modal__input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone_form"></use>
             </svg>
@@ -562,7 +562,7 @@
 
           <div class="modal__form-field">
             <label class="modal__form-text" for="email">Пошта</label>
-            <input class="modal__form-input" type="email" name="email" id="email" />
+            <input class="modal__form-input" type="email" name="userEmail" id="email" required />
             <svg class="modal__input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email_form"></use>
             </svg>
@@ -572,14 +572,14 @@
             <label class="modal__form-text" for="comment">Коментар</label>
             <textarea
               class="modal__form-textarea"
-              name="comment"
+              name="userComment"
               id="comment"
               rows="8"
               placeholder="Введіть текст"></textarea>
           </div>
           <div class="modal__checkbox">
             <label class="modal__checkbox-body">
-              <input class="modal__checkbox-input" type="checkbox" name="policy" />
+              <input class="modal__checkbox-input" type="checkbox" name="policy" required />
               <svg class="modal__checkbox-agree" width="16" height="15">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
@@ -593,12 +593,13 @@
             </label>
           </div>
           <div class="modal__submit-body">
-            <button class="modal__submit-button" type="submit">Відправити</button>
+            <button disabled class="modal__submit-button disabled" type="submit">Відправити</button>
           </div>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/button-agree.js"></script>
   </body>

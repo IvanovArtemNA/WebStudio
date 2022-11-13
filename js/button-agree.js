@@ -1,20 +1,6 @@
-(() => {
-    const menuBtnRef = document.querySelector("[data-check__agreement]");
-    /*closeModalBtn: document.querySelector("[data-mobile__menu-close]"),*/
-    /*const mobileMenuRef = document.querySelector("[data-mobile__menu]");*/
-  
-
-    menuBtnRef.addEventListener("click", () => {
-        /*const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-        /*refs.openModalBtn.addEventListener("click", toggleModal);*/
-        /*refs.closeModalBtn.addEventListener("click", toggleModal);*/
-
-        menuBtnRef.classList.toggle("is-checked");
-        /*menuBtnRef.setAttribute("aria-expanded", !expanded);*/
-        /*function toggleModal() {
-          refs.modal.classList.toggle("is-open");*/
-        
-        /*mobileMenuRef.classList.toggle("is-open");*/
-    });
-})();
+() => {
+  const menuBtnRef = document.querySelector('[data-check__agreement]');
+  menuBtnRef.addEventListener('click', () => {
+    menuBtnRef.classList.toggle('is-checked');
+  });
+};

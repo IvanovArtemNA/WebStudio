@@ -228,6 +228,10 @@
   border: none;
   margin-top: 30px;
   cursor: pointer;
+
+  &.disabled {
+    background: #ababab;
+  }
 }
 
 .modal__submit-body {

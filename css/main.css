@@ -818,6 +818,9 @@ img {
   margin-top: 30px;
   cursor: pointer;
 }
+.modal__submit-button.disabled {
+  background: #ababab;
+}
 
 .modal__submit-body {
   display: flex;
