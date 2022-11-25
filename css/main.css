@@ -884,6 +884,28 @@ img {
   flex-shrink: 0;
 }
 
+.swal-footer {
+  text-align: center;
+}
+
+.swal-text {
+  color: #212121;
+}
+
+.swal-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #212121;
+  transition: all 250ms;
+  font-weight: 400;
+}
+
+.swal-button:not([disabled]):hover, .swal-button:not([disabled]):focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
 /* СЕКЦИЯ КОМАНДА */
 .teammates {
   background-color: #f5f4fa;

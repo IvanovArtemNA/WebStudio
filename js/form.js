@@ -35,7 +35,7 @@ const onOrderFormElSubmit = event => {
 
 const onSubmitBtnClick = () => {
   backdropEl.classList.add('is-hidden');
-  alert('Наш менеджер зв`яжеться з вами протяом 5 хвилин');
+  swal('', 'Наш менеджер зв`яжеться з вами протяом 5 хвилин', 'success');
 };
 
 orderFormEl.addEventListener('change', onOrderFormElChange);
