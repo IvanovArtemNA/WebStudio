@@ -5,19 +5,22 @@
 }
 
 .logo {
-  color: $logo-color-header;
+  display: flex;
+  padding: 16px 0;
+  width: max-content;
+
   font-family: $font-family-secondary;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
-  display: flex;
-  padding: 16px 0;
-  width: max-content;
+
+  color: $logo-color-header;
 
   &--white {
-    color: $background-text-color;
     padding: 0;
+
+    color: $background-text-color;
 
     @media screen and (max-width: 1199px) {
       display: flex;

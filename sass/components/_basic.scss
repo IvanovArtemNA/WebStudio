@@ -1,16 +1,16 @@
 /*  ОСНОВНОЕ */
 
 body {
-  background-color: $background-text-color;
-  color: $primary-text-color;
   font-family: $font-family-main;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+  background-color: $background-text-color;
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -30,6 +30,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: $background-text-color;
 
   @media screen and (min-width: 1200px) {
@@ -60,6 +61,7 @@ p {
 ul {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 

@@ -31,14 +31,15 @@
 }
 
 .clients__link {
-  border: 1px solid $color-icons;
-  border-radius: 4px;
-  width: 210px;
-  height: 92px;
-  fill: $color-icons;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 210px;
+  height: 92px;
+
+  fill: $color-icons;
+  border: 1px solid $color-icons;
+  border-radius: 4px;
 
   transition-property: fill, border-color;
   transition-duration: 250ms;

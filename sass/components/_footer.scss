@@ -2,6 +2,7 @@
 
 .footer {
   padding: 60px 0;
+
   background-color: $footer-backgroud-color;
 }
 
@@ -23,14 +24,16 @@
 }
 
 .address {
-  font-style: normal;
   margin-top: 20px;
+
+  font-style: normal;
 }
 
 .makeit {
   font-weight: 700;
   line-height: 1.14px;
   letter-spacing: 0.03em;
+
   color: $background-text-color;
 }
 

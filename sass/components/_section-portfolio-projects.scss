@@ -11,6 +11,7 @@
 
 .portfolio-project__item {
   margin-top: 30px;
+
   @media screen and (max-width: 767px) {
     &:first-child {
       margin-top: 40px;
@@ -19,6 +20,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 1 * 30px) / 2);
+
     &:nth-child(odd) {
       margin-right: 30px;
     }
@@ -31,6 +33,7 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
+
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -41,12 +44,12 @@
 }
 
 .project {
-  text-decoration: none;
-
   display: flex;
   flex-direction: column;
-
   height: 100%;
+
+  text-decoration: none;
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,6 +64,7 @@
 .project__border {
   flex-grow: 1;
   padding: 20px 24px;
+
   border-left: 1px solid $border-color;
   border-right: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
@@ -73,11 +77,12 @@
 }
 
 .project__title {
-  color: $primary-text-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: $primary-text-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 306px;
@@ -85,8 +90,10 @@
 }
 
 .project__category {
-  color: $secondary-text-color;
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.88;
-  margin-top: 4px;
+
+  color: $secondary-text-color;
 }

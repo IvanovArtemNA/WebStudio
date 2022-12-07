@@ -1,11 +1,11 @@
 /* ГЛАВНАЯ СЕКЦИЯ */
 
 .hero {
-  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
+  text-align: center;
 
   background-size: cover;
   background-position: center;
@@ -61,35 +61,35 @@
 }
 
 .hero__title {
-  color: $background-text-color;
+  margin: 0 auto;
+  max-width: 360px;
 
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
+
+  color: $background-text-color;
 
   @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    max-width: 696px;
   }
 }
 
 .hero__button {
-  color: $background-text-color;
-  background-color: $interactive-color;
+  margin-top: 30px;
+  padding: 10px 24px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  margin-top: 30px;
-  padding: 10px 24px;
-
+  color: $background-text-color;
+  background-color: $interactive-color;
   border: 0 solid transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

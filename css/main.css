@@ -1,16 +1,15 @@
 @charset "UTF-8";
 /*  ОСНОВНОЕ */
 body {
-  background-color: #ffffff;
-  color: #212121;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #ffffff;
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -74,11 +73,11 @@ img {
 
 /* КОНТАКТЫ ФУТЕР */
 .contacts-footer {
+  display: block;
   margin-top: 8px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  display: block;
+  color: rgba(255, 255, 255, 0.6);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -137,17 +136,17 @@ img {
 }
 
 .form-subscribe__input {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 16px;
-  width: 100%;
-  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-subscribe__input {
@@ -161,22 +160,21 @@ img {
 }
 
 .form-subscribe__button {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  margin: 0 auto;
   margin-top: 20px;
-  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  background-color: #2196f3;
   color: #ffffff;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 28px;
-  margin-right: auto;
-  margin-left: auto;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: none;
 }
 @media screen and (max-width: 767px) {
   .form-subscribe__button {
@@ -226,8 +224,8 @@ img {
 }
 
 .address {
-  font-style: normal;
   margin-top: 20px;
+  font-style: normal;
 }
 
 .makeit {
@@ -261,11 +259,11 @@ img {
 /* МОБИЛЬНОЕ МЕНЮ */
 .mobile__menu {
   z-index: 2;
+  padding: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
-  margin-left: auto;
 }
 @media screen and (min-width: 767px) {
   .mobile__menu {
@@ -308,12 +306,12 @@ img {
     transform: translateX(100%);
     top: 0;
     left: 0;
+    display: flex;
     width: 100%;
     height: 100%;
     padding: 48px 40px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
     flex-direction: column;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 768px) {
@@ -356,9 +354,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .nav__link {
-    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
+    line-height: 1.14;
   }
   .nav__link:hover, .nav__link:focus {
     color: #2196f3;
@@ -371,18 +369,18 @@ img {
 @media screen and (min-width: 768px) {
   .nav__link--current {
     position: relative;
-    color: #2196f3;
     display: block;
+    color: #2196f3;
   }
   .nav__link--current::after {
     content: "";
     position: absolute;
-    background-color: #2196f3;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
     bottom: -1px;
     left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
   }
 }
 
@@ -428,8 +426,8 @@ img {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  color: #757575;
   text-decoration: none;
+  color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 479px) {
@@ -463,14 +461,14 @@ img {
 }
 
 .contacts__link-email {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  color: #757575;
   text-decoration: none;
+  color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
 }
 .contacts__link-email:hover, .contacts__link-email:focus {
   color: #2196f3;
@@ -539,17 +537,17 @@ img {
 @media screen and (max-width: 767px) {
   .social-link__mobile-menu {
     padding: 0px 10px;
-    text-decoration: none;
-    color: #2196f3;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
+    text-decoration: none;
+    color: #2196f3;
   }
   .social-link__mobile-menu:nth-child(n+2) {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
   .social-link__mobile-menu:first-child {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .social-link__mobile-menu:last-child {
     padding-right: 0;
@@ -562,8 +560,8 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
@@ -577,21 +575,21 @@ img {
 }
 
 .logo {
-  color: #000000;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  text-decoration: none;
   display: flex;
   padding: 16px 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: #000000;
 }
 .logo--white {
-  color: #ffffff;
   padding: 0;
+  color: #ffffff;
 }
 @media screen and (max-width: 1199px) {
   .logo--white {
@@ -605,18 +603,18 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
   opacity: 1;
-  z-index: 2;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -624,11 +622,11 @@ img {
   top: 330px;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  width: 450px;
   padding: 40px 40px 40px 40px;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 450px;
-  background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 479px) {
@@ -644,23 +642,24 @@ img {
 }
 
 .modal__close-button {
-  background-color: #ffffff;
-  border: none;
   position: absolute;
   top: 8px;
   right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   width: 30px;
   height: 30px;
+  background-color: #ffffff;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .modal__close-button:hover, .modal__close-button:focus {
   color: #2196f3;
 }
+
 .modal__close-icon {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -675,13 +674,13 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 12px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -708,15 +707,15 @@ img {
 
 .modal__form-input {
   position: relative;
-  outline: transparent;
+  margin-top: 4px;
+  padding-left: 42px;
   width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  height: 40px;
-  margin-top: 4px;
-  cursor: pointer;
-  padding-left: 42px;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal__form-input:hover {
   border-color: #2196f3;
@@ -728,17 +727,17 @@ img {
 
 .modal__form-textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  outline: transparent;
-  width: 100%;
-  height: 120px;
-  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 4px;
-  padding: 12px 16px;
+  outline: transparent;
+  resize: none;
   cursor: pointer;
 }
 .modal__form-textarea::-moz-placeholder {
@@ -774,9 +773,9 @@ img {
 }
 
 .modal__checkbox-link {
-  color: #2196f3;
   font-size: 12px;
   line-height: 1.17;
+  color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
   .modal__checkbox-link {
@@ -804,6 +803,8 @@ img {
 }
 
 .modal__submit-button {
+  padding: 10px 52px;
+  margin-top: 30px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -813,9 +814,7 @@ img {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 52px;
   border: none;
-  margin-top: 30px;
   cursor: pointer;
 }
 .modal__submit-button.disabled {
@@ -835,10 +834,10 @@ img {
 }
 
 .modal__input-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   bottom: 11px;
   left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 .modal__form-field:hover .modal__input-icon {
@@ -866,10 +865,10 @@ img {
 }
 
 .modal__checkbox-agree {
+  position: absolute;
+  left: 0;
   min-width: 16px;
   margin-right: 8px;
-  left: 0;
-  position: absolute;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
@@ -894,16 +893,16 @@ img {
 
 .swal-button {
   padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #212121;
-  transition: all 250ms;
   font-weight: 400;
+  color: #212121;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 250ms;
 }
 
 .swal-button:not([disabled]):hover, .swal-button:not([disabled]):focus {
-  background-color: #2196f3;
   color: #ffffff;
+  background-color: #2196f3;
 }
 
 /* СЕКЦИЯ КОМАНДА */
@@ -930,11 +929,11 @@ img {
 }
 
 .teammates__item {
+  margin-top: 30px;
+  text-align: center;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  text-align: center;
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .teammates__item {
@@ -958,10 +957,10 @@ img {
 }
 
 .teammates__profession {
-  color: #757575;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 10px;
+  color: #757575;
 }
 
 .teammates__container {
@@ -981,11 +980,11 @@ img {
 }
 
 .social-networks__link {
-  fill: #afb1b8;
-  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 44px;
+  fill: #afb1b8;
   border-radius: 50%;
   transition-property: fill, background-color;
   transition-duration: 250ms;
@@ -1043,21 +1042,21 @@ img {
 }
 
 .advantage-cards__container {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
 }
 
 .advantage__subtitle {
-  color: #212121;
+  margin-top: 30px;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
   text-align: center;
-  margin-top: 30px;
+  color: #212121;
 }
 @media screen and (min-width: 768px) {
   .advantage__subtitle {
@@ -1066,9 +1065,9 @@ img {
 }
 
 .advantage__text {
-  color: #757575;
-  line-height: 1.71;
   margin-top: 10px;
+  line-height: 1.71;
+  color: #757575;
 }
 
 /* СЕКЦИЯ ПОСТОЯННЫХ КЛИЕНТОВ */
@@ -1103,14 +1102,14 @@ img {
 }
 
 .clients__link {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 210px;
-  height: 92px;
-  fill: #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 210px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1132,11 +1131,10 @@ img {
 
 /* ГЛАВНАЯ СЕКЦИЯ */
 .hero {
-  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
@@ -1175,32 +1173,31 @@ img {
   }
 }
 .hero__title {
-  color: #ffffff;
+  margin: 0 auto;
+  max-width: 360px;
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
+  color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    max-width: 696px;
   }
 }
 
 .hero__button {
-  color: #ffffff;
-  background-color: #2196f3;
+  margin-top: 30px;
+  padding: 10px 24px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  margin-top: 30px;
-  padding: 10px 24px;
+  color: #ffffff;
+  background-color: #2196f3;
   border: 0 solid transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1225,18 +1222,18 @@ img {
 }
 
 .portfolio-filter__button {
-  background-color: #f5f4fa;
+  padding: 6px 25px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  cursor: pointer;
+  background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 6px 25px;
   border: none;
   transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .portfolio-filter__button:hover, .portfolio-filter__button:focus {
   background-color: #2196f3;
@@ -1254,26 +1251,26 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(101%);
   display: flex;
   width: 100%;
   height: 100%;
-  transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project:hover .project__overlay-container, .project:focus .project__overlay-container {
   transform: translateY(0);
 }
 
 .project__overlay-text {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 /* Секция ПОРТФОЛИО (ПРОЕКТЫ) */
@@ -1320,10 +1317,10 @@ img {
 }
 
 .project {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   height: 100%;
+  text-decoration: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1346,11 +1343,11 @@ img {
 }
 
 .project__title {
-  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project__title {
@@ -1359,10 +1356,10 @@ img {
 }
 
 .project__category {
-  color: #757575;
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
-  margin-top: 4px;
+  color: #757575;
 }
 
 /* СЕКЦИЯ СПЕЦИАЛИЗАЦИЯ */
@@ -1394,15 +1391,15 @@ img {
 .specialization__container {
   position: absolute;
   bottom: 0;
+  padding: 27px 0;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
-  padding: 27px 0;
 }
 
 .specialization__text {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
