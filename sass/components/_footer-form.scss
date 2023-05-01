@@ -56,6 +56,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 
+  color: rgba(255, 255, 255, 0.3);
   background-color: $footer-backgroud-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -67,6 +68,16 @@
 
   @media screen and (min-width: 1200px) {
     width: 358px;
+  }
+}
+
+.form-subscribe__input:focus {
+  color: $border-color;
+  outline: 1px solid;
+  outline-color: $border-color;
+
+  &::placeholder {
+    color: $border-color;
   }
 }
 
